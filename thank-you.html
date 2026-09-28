@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You — Pawz Riverside</title>
+  <meta name="description" content="Thank you for reaching out to Pawz Riverside! Gigi will be in touch within 24 hours." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .thankyou-section {
+      min-height: calc(100vh - var(--nav-height) - 300px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-lavender-mist);
+      padding-block: 5rem;
+    }
+
+    .thankyou-card {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      padding: 3.5rem 2.5rem;
+      max-width: 580px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .thankyou-card__paw {
+      font-size: 4.5rem;
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      display: block;
+      animation: pawbounce 1s ease infinite alternate;
+    }
+
+    @keyframes pawbounce {
+      from { transform: translateY(0); }
+      to   { transform: translateY(-10px); }
+    }
+
+    .thankyou-card__title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      color: var(--color-violet);
+      margin-bottom: 1rem;
+    }
+
+    .thankyou-card__title span {
+      color: var(--color-amber);
+    }
+
+    .thankyou-card__message {
+      font-size: 1.05rem;
+      color: var(--color-text-light);
+      line-height: 1.75;
+      margin-bottom: 2rem;
+    }
+
+    .thankyou-card__divider {
+      width: 60px;
+      height: 3px;
+      background: var(--color-amber);
+      border-radius: 3px;
+      margin: 0 auto 2rem;
+      border: none;
+    }
+
+    .thankyou-card__steps {
+      text-align: left;
+      background: var(--color-lavender-mist);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .thankyou-card__steps-title {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--color-violet);
+      margin-bottom: 0.85rem;
+    }
+
+    .thankyou-card__steps ol {
+      padding-left: 1.3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      font-size: 0.93rem;
+      color: var(--color-text-light);
+    }
+
+    .thankyou-card__steps ol li::marker {
+      color: var(--color-amber);
+      font-weight: 800;
+    }
+
+    .thankyou-card__actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    @media (min-width: 420px) {
+      .thankyou-card__actions {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .thankyou-card {
+        padding: 2.5rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><img src="images/Pawz Riverside Logo.jpg" alt="Pawz Riverside" class="nav__logo-img" /></a>
+      <nav class="nav__links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="area.html">Service Area</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn--secondary nav__cta">Book Now</a>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav__mobile" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="blog.html">Blog</a>
+      <a href="faq.html">FAQ</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="area.html">Service Area</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn--secondary">Book Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="thankyou-section">
+      <div class="container">
+        <div class="thankyou-card">
+          <span class="thankyou-card__paw" role="img" aria-label="Paw print">🐾</span>
+          <h1 class="thankyou-card__title">You're <span>all set!</span></h1>
+          <p class="thankyou-card__message">
+            Thank you for reaching out to <strong>Pawz Riverside!</strong> Your message has been received and <strong>Gigi will be in touch within 24 hours</strong> to confirm your booking details and answer any questions.
+          </p>
+          <hr class="thankyou-card__divider" />
+          <div class="thankyou-card__steps">
+            <p class="thankyou-card__steps-title">Here's what happens next:</p>
+            <ol>
+              <li>Gigi reviews your booking request.</li>
+              <li>She'll reach out within 24 hours to confirm details.</li>
+              <li>For new clients, we'll schedule a quick meet-and-greet first.</li>
+              <li>Your fur baby is in the very best hands. 🐾</li>
+            </ol>
+          </div>
+          <div class="thankyou-card__actions">
+            <a href="index.html" class="btn btn--primary">Back to Home</a>
+            <a href="services.html" class="btn btn--outline">Browse Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <p class="footer__logo">Pawz Riverside 🐾</p>
+          <p class="footer__tagline">Where pets are family. In-home pet care for dogs and cats across Riverside and Corona, CA.</p>
+          <div class="footer__social" aria-label="Social media">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          </div>
+        </div>
+        <div><p class="footer__col-title">Services</p><nav class="footer__nav"><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="gallery.html">Gallery</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a></nav></div>
+        <div><p class="footer__col-title">Company</p><nav class="footer__nav"><a href="about.html">About</a><a href="testimonials.html">Testimonials</a><a href="area.html">Service Area</a><a href="contact.html">Contact</a></nav></div>
+        <div><p class="footer__col-title">Contact Us</p><div class="footer__contact"><a href="tel:+19515550190">📞 (951) 555-0190</a><a href="mailto:gigi@pawzriverside.com">✉️ gigi@pawzriverside.com</a></div></div>
+      </div>
+      <hr class="footer__divider" />
+      <div class="footer__bottom">
+        <p>© <span class="footer-year"></span> Pawz Riverside. All rights reserved.</p>
+        <p>Made with 🐾 in Riverside, CA</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

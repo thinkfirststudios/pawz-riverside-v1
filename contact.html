@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Booking — Pawz Riverside</title>
+  <meta name="description" content="Book a pet sitting or pet taxi service in Riverside or Corona, CA. Fill out our form and Gigi will respond within 24 hours." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><img src="images/Pawz Riverside Logo.jpg" alt="Pawz Riverside" class="nav__logo-img" /></a>
+      <nav class="nav__links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="area.html">Service Area</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn--secondary nav__cta">Book Now</a>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav__mobile" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="blog.html">Blog</a>
+      <a href="faq.html">FAQ</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="area.html">Service Area</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn--secondary">Book Now</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- CONTACT INFO BAR -->
+    <div class="contact-info-bar" role="complementary" aria-label="Quick contact info">
+      <div class="container">
+        <div class="contact-info-bar__inner">
+          <a href="tel:+19515550190">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            (951) 555-0190
+          </a>
+          <a href="mailto:gigi@pawzriverside.com">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            gigi@pawzriverside.com
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="page-hero__eyebrow">Let's Get Started</p>
+        <h1 class="page-hero__title">Book a Service</h1>
+        <p class="page-hero__subtitle">Fill out the form below and Gigi will get back to you within 24 hours to confirm your booking.</p>
+      </div>
+    </section>
+
+    <!-- ONLINE BOOKING PLACEHOLDER -->
+    <section class="section section--alt">
+      <div class="container" style="max-width: 760px;">
+        <div class="section__header">
+          <p class="section__eyebrow">Online Scheduling</p>
+          <h2 class="section__title">Schedule a Visit Directly</h2>
+          <p class="section__subtitle">Use our online calendar to pick a date and time that works for you.</p>
+        </div>
+        <div class="booking-placeholder fade-in">
+          <div class="booking-placeholder__icon" aria-hidden="true">📅</div>
+          <h3 class="booking-placeholder__title">Online Booking Coming Soon</h3>
+          <p class="booking-placeholder__text">
+            We're setting up our online scheduling system (Calendly or similar). In the meantime, use the contact form below or call us directly to book your visit.
+          </p>
+          <!--
+            SETUP: Replace this placeholder with your scheduling embed.
+            Example — Calendly:
+            <div class="calendly-inline-widget" data-url="https://calendly.com/your-link" style="min-width:320px;height:630px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+            Or link to your booking page:
+            <a href="https://calendly.com/your-link" class="btn btn--primary btn--lg" target="_blank" rel="noopener">Open Scheduling Calendar</a>
+          -->
+          <a href="#booking-form" class="btn btn--primary">Use Contact Form Instead</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING FORM -->
+    <section class="contact-form-section" id="booking-form">
+      <div class="container">
+        <div class="contact-form-section__inner">
+          <div class="section__header" style="margin-bottom: 2rem;">
+            <p class="section__eyebrow">Send a Request</p>
+            <h2 class="section__title" style="font-size: 1.75rem;">Tell Us About Your Pet</h2>
+          </div>
+          <div class="contact-form fade-in">
+            <!--
+              Formspree endpoint: https://formspree.io/f/meepbnwb
+              IMPORTANT: Update the notification email in your Formspree dashboard to:
+              gigi@pawzriverside.com
+              (Confirm correct spelling with Gigi before going live)
+            -->
+            <form action="https://formspree.io/f/meepbnwb" method="POST">
+              <input type="hidden" name="_subject" value="New Booking Request - Pawz Riverside" />
+              <input type="hidden" name="_next" value="https://pawzriverside.com/thank-you.html" />
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="full-name">Full Name *</label>
+                  <input type="text" id="full-name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="pet-name">Pet's Name *</label>
+                  <input type="text" id="pet-name" name="pet-name" placeholder="Biscuit" required />
+                </div>
+                <div class="form-group">
+                  <label for="pet-type">Pet Type *</label>
+                  <select id="pet-type" name="pet-type" required>
+                    <option value="" disabled selected>Select one...</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="service">Service Needed *</label>
+                  <select id="service" name="service" required>
+                    <option value="" disabled selected>Select one...</option>
+                    <option value="In-Home Pet Sitting">In-Home Pet Sitting</option>
+                    <option value="Pet Taxi">Pet Taxi</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="preferred-date">Preferred Date *</label>
+                  <input type="date" id="preferred-date" name="date" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" placeholder="(951) 555-0000" required autocomplete="tel" />
+                </div>
+                <div class="form-group form-group--full">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+                </div>
+                <div class="form-group form-group--full">
+                  <label for="notes">Special Notes or Questions</label>
+                  <textarea id="notes" name="notes" placeholder="Tell us about any medications, dietary preferences, personality quirks, or anything else we should know about your pet..."></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn--primary form-submit btn--lg">Send My Request 🐾</button>
+              <p style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 1rem; text-align: center;">
+                * Required fields. Gigi will respond within 24 hours.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOK & PAY PLACEHOLDER -->
+    <section class="section section--white" style="text-align: center;">
+      <div class="container" style="max-width: 600px;">
+        <p class="section__eyebrow">Online Payments</p>
+        <h2 class="section__title" style="margin-bottom: 0.75rem;">Prefer to Book &amp; Pay Online?</h2>
+        <p style="color: var(--color-text-light); margin-bottom: 2rem;">Secure online payment is coming soon. For now, payment is handled directly with Gigi after your booking is confirmed.</p>
+        <!--
+          SETUP: When ready, link this button to your payment/booking platform
+          (e.g., Square, PayPal, Stripe, or your scheduling tool's payment flow).
+        -->
+        <a href="#" class="btn btn--secondary btn--lg" aria-disabled="true" style="opacity: 0.6; cursor: not-allowed;">Book &amp; Pay Online (Coming Soon)</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <p class="footer__logo">Pawz Riverside 🐾</p>
+          <p class="footer__tagline">Where pets are family. In-home pet care for dogs and cats across Riverside and Corona, CA.</p>
+          <div class="footer__social" aria-label="Social media">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title">Services</p>
+          <nav class="footer__nav"><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="gallery.html">Gallery</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a></nav>
+        </div>
+        <div>
+          <p class="footer__col-title">Company</p>
+          <nav class="footer__nav"><a href="about.html">About</a><a href="testimonials.html">Testimonials</a><a href="area.html">Service Area</a><a href="contact.html">Contact</a></nav>
+        </div>
+        <div>
+          <p class="footer__col-title">Contact Us</p>
+          <div class="footer__contact">
+            <a href="tel:+19515550190">📞 (951) 555-0190</a>
+            <a href="mailto:gigi@pawzriverside.com">✉️ gigi@pawzriverside.com</a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer__divider" />
+      <div class="footer__bottom">
+        <p>© <span class="footer-year"></span> Pawz Riverside. All rights reserved.</p>
+        <p>Made with 🐾 in Riverside, CA</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
